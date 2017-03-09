@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="manifest" href="/blog2/manifest.json">  
+		<title>Blog 2</title>
+	</head>
+	<body>
+		ここは2つめのブログですよ<br>
+		<a href="/index.html">もどる</a>
+		<script type="text/javascript">
+			navigator.serviceWorker && navigator.serviceWorker.register('/blog2/sw.js').then(function(registration) {
+			console.log('Excellent, registered with scope: ', registration.scope);
+});
+		</script>
+	</body>
+</html>
